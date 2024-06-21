@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios  from "axios";
 
 export const fetchCharacters = () => async dispatch => {
   dispatch({ type: 'FETCH_CHARACTERS_REQUEST' });
