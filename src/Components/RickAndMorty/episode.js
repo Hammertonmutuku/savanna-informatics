@@ -18,7 +18,7 @@ const episode = useSelector(state => state.episodes.episode);
     }
   }, [dispatch, episode, id]);
 
-//   if (isLoading) return <p>Loading...</p>;
+ if (isLoading) return <p>Loading...</p>;
   if (!episode) return <p>User Not found</p>;
 
   return (
