@@ -13,6 +13,7 @@ function App() {
        <Router>
         <Routes>
         <Route path="/" element={<CharactersList/>} />
+        <Route path="/rick_and_morty" element={<CharactersList/>} />
         <Route path ="/unsplash" element={<UnsplashList/>} />
         <Route path="/episodes" element={<EpisodesList/>} />
         {/* <Route path="/character/:id" element={<UserDetail />} /> */}
