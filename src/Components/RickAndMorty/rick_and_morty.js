@@ -4,33 +4,54 @@ const RickAndMorty = () => {
   return (
     <>
       <div class="container">
-      <div class="jumbotron text-center">
-        <h1 class="display-4">Rick and Morty API Documentation</h1>
-        <p class="lead">
+        <div class="jumbotron text-center">
+          <h1 class="display-4">Rick and Morty API Documentation</h1>
+          <p class="lead">
             An open API to access information from the Rick and Morty universe
-        </p>
-        <p class="lead">
-          Click on the below buttons to view the consumed apis.
-        </p>
-        <div class="d-flex justify-content-center gap-3">
-            <a href= "/rick_and_morty/characters" type="button" class="btn btn-primary btn-lg">Characters</a>
-            <a href ="/rick_and_morty/episodes" type="button" class="btn btn-primary btn-lg">Episodes</a>
+          </p>
+          <p class="lead">
+            Click on the below buttons to view the consumed apis.
+          </p>
+          <div class="d-flex justify-content-center gap-3">
+            <a
+              href="/rick_and_morty/characters"
+              type="button"
+              class="btn btn-primary btn-lg"
+            >
+              Characters
+            </a>
+            <a
+              href="/rick_and_morty/episodes"
+              type="button"
+              class="btn btn-primary btn-lg"
+            >
+              Episodes
+            </a>
+          </div>
         </div>
-    </div>
 
         <section id="introduction">
           <h2 class="section-header">Introduction</h2>
-          <p>
+          <p class= "lead">
             The Rick and Morty API is a RESTful and GraphQL API based on the
-            television show Rick and Morty. You will have access to about
-            hundreds of characters, images, locations, and episodes. The API is
+            television show Rick and Morty.
+            <br></br>
+             You will have access to about
+            hundreds of characters, images, locations, and episodes.
+            <br></br>
+             The API is
             free to use and does not require authentication.
           </p>
-        
         </section>
 
         <section id="endpoints">
           <h2 class="section-header">Endpoints</h2>
+          <p class="lead">
+            The API is available at https://rickandmortyapi.com/api/. Responses
+            are sent as JSON.
+            <br></br>
+            Here Are a few of the endpoints
+          </p>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
@@ -317,8 +338,8 @@ const RickAndMorty = () => {
             <code>GET https://rickandmortyapi.com/api/location/1</code>
           </pre>
           <h4>Example Response:</h4>
-      <pre class="code-example" style={{ textAlign: 'left' }}>
-{`
+          <pre class="code-example" style={{ textAlign: "left" }}>
+            {`
   {
   "id": 1,
   "name": "Earth (C-137)",
@@ -356,9 +377,8 @@ const RickAndMorty = () => {
   "url": "https://rickandmortyapi.com/api/location/1",
   "created": "2017-11-10T12:42:04.162Z"
 }
-`  }
-</pre>
-
+`}
+          </pre>
         </section>
       </div>
     </>
