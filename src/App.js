@@ -1,30 +1,32 @@
-import './App.css';
-import React from 'react';
-import CharactersList from './Components/RickAndMorty/rick_and_morty'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import EpisodesList from './Components/RickAndMorty/episodes';
-import EpisodeDetail from './Components/RickAndMorty/episode';
-import UnsplashList from './Components/Unsplash/unsplash';
+import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import UnsplashList from "./Components/Unsplash/unsplash";
+import RickAndMorty from "./Components/RickAndMorty/rick_and_morty";
+import CharactersList from "./Components/RickAndMorty/Characters/characters";
+import EpisodesList1 from "./Components/RickAndMorty/Episodes/episodes";
+import CharacterDetail from "./Components/RickAndMorty/Characters/charactersDetails";
 
 function App() {
   return (
     <div className="App">
-
-       <Router>
+      <Router>
         <Routes>
-        <Route path="/" element={<CharactersList/>} />
-        <Route path="/rick_and_morty" element={<CharactersList/>} />
-        <Route path ="/unsplash" element={<UnsplashList/>} />
-        <Route path="/episodes" element={<EpisodesList/>} />
-        {/* <Route path="/character/:id" element={<UserDetail />} /> */}
-        <Route path="/episodes/:id" element={<EpisodeDetail />} />
+          <Route path="/" element={<RickAndMorty />} />
+          <Route path="/rick_and_morty" element={<RickAndMorty />} />
+          <Route
+            path="/rick_and_morty/characters"
+            element={<CharactersList />}
+          />
+          <Route path="/rick_and_morty/characters/:id" element= {<CharacterDetail></CharacterDetail>}/>
+          <Route path="/rick_and_morty/episodes" element={<EpisodesList1 />} />
+          <Route path="/unsplash" element={<UnsplashList />} />
+        
+          {/* <Route path="/character/:id" element={<UserDetail />} /> */}
+          {/* <Route path="/episodes/:id" element={<EpisodeDetail />} /> */}
         </Routes>
-         
-
-        </Router>
-    
+      </Router>
     </div>
-    
   );
 }
 

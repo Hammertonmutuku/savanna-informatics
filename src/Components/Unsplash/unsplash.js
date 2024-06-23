@@ -17,8 +17,12 @@ const UnsplashList = () => {
   return (
     <>
      <div class="container">
-    <h1 class="mt-5 mb-4 text-center">Unsplash API Documentation</h1>
-
+     <div class="jumbotron text-center">
+          <h1 class="display-4">Unslash Documentation</h1>
+          <p class="lead">An open API to access information from Unsplash</p>
+        </div>
+    
+       
   
     <div class="endpoint-section">
       <h2 class="endpoint-title">Random Photos</h2>
